@@ -5479,6 +5479,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -5498,7 +5532,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.axios.patch("http://localhost:8000/api/products/".concat(this.$route.params.id), this.product).then(function (res) {
         _this2.$router.push({
-          name: 'home'
+          name: "home"
         });
       });
     }
@@ -28739,7 +28773,7 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h3", { staticClass: "text-center" }, [_vm._v("Edit Product")]),
+    _c("h3", { staticClass: "text-center" }, [_vm._v("Edit TTV")]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-md-6" }, [
@@ -28781,26 +28815,104 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "form-group" }, [
-              _c("label", [_vm._v("Detail")]),
+              _c("label", [_vm._v("Tekanan Darah")]),
               _vm._v(" "),
               _c("input", {
                 directives: [
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.product.detail,
-                    expression: "product.detail",
+                    value: _vm.product.tekanan,
+                    expression: "product.tekanan",
                   },
                 ],
                 staticClass: "form-control",
                 attrs: { type: "text" },
-                domProps: { value: _vm.product.detail },
+                domProps: { value: _vm.product.tekanan },
                 on: {
                   input: function ($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.$set(_vm.product, "detail", $event.target.value)
+                    _vm.$set(_vm.product, "tekanan", $event.target.value)
+                  },
+                },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", [_vm._v("Denyut Jantung")]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.product.denyut,
+                    expression: "product.denyut",
+                  },
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text" },
+                domProps: { value: _vm.product.denyut },
+                on: {
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.product, "denyut", $event.target.value)
+                  },
+                },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", [_vm._v("Laju Pernapasan")]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.product.laju,
+                    expression: "product.laju",
+                  },
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text" },
+                domProps: { value: _vm.product.laju },
+                on: {
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.product, "laju", $event.target.value)
+                  },
+                },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", [_vm._v("Suhu")]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.product.suhu,
+                    expression: "product.suhu",
+                  },
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text" },
+                domProps: { value: _vm.product.suhu },
+                on: {
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.product, "suhu", $event.target.value)
                   },
                 },
               }),
@@ -28809,7 +28921,7 @@ var render = function () {
             _c(
               "button",
               { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-              [_vm._v("Update")]
+              [_vm._v("\n                    Update\n                ")]
             ),
           ]
         ),
